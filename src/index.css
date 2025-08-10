@@ -55,5 +55,5 @@ body {
 }
 
 .button-container.active {
-  @apply bg-blue-400 cursor-default user-select-none;
+  @apply bg-blue-400 cursor-default select-none;
 }
