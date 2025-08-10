@@ -1,6 +1,6 @@
 # React + TypeScript + Tailwind +Vite
 
-+## Getting Started
+## Getting Started
 
-- +To start the project locally:
-  +npm start
+- To start the project locally:
+- npm start
