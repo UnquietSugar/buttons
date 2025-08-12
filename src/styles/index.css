@@ -34,18 +34,6 @@ body {
   @apply grid grid-cols-3 grid-rows-3 gap-4 w-64 h-64 md:h-96 md:w-96 bg-gray-100 p-4 rounded-lg;
 }
 
-.firs-row-item {
-  @apply row-start-1;
-}
-
-.seconc-row-item {
-  @apply row-start-2;
-}
-
-.third-row-item {
-  @apply row-start-3;
-}
-
 .button-container {
   @apply bg-blue-200 aspect-square rounded-md transition-all duration-300 ease-in-out h-full w-full;
 }

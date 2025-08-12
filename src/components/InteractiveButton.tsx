@@ -1,4 +1,4 @@
-import "./index.css";
+import "../styles/index.css";
 import { useEffect, useState } from "react";
 
 export const InteractiveButton = () => {
