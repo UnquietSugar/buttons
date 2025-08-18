@@ -1,23 +1,15 @@
 import "../styles/index.css";
-import { useEffect, useState } from "react";
 
-export const InteractiveButton = () => {
-  const [isActive, setIsActive] = useState(false);
+import type { FC } from "react";
 
-  useEffect(() => {
-    if (!isActive) return;
-
-    const timeout = setTimeout(() => {
-      setIsActive(false);
-    }, 2000);
-
-    return () => clearTimeout(timeout);
-  }, [isActive]);
-
-  return (
-    <button
-      className={`button-container ${isActive ? "active" : ""}`}
-      onClick={() => setIsActive(true)}
-    />
-  );
+type Props = {
+  onClick: () => void;
+  isActive: boolean;
 };
+
+export const InteractiveButton: FC<Props> = ({ onClick, isActive }) => (
+  <button
+    className={`button-container ${isActive ? "active" : ""}`}
+    onClick={onClick}
+  />
+);
